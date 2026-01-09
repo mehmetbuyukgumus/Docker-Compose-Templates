@@ -1,10 +1,14 @@
-# Compose Templates
+# Docker Compose Templates
 
-This project contains various Docker Compose templates. Each template helps you quickly set up a development or production environment for a specific service or application.
+This repository is a collection of Docker Compose templates designed to help you quickly set up development or production environments for various services and applications. Each directory contains a `docker-compose.yml` file tailored for a specific service.
 
 ## Contents
 
-### 1. PostgreSQL
+### 1. MongoDB
+- **Location:** `mongodb/docker-compose.yml`
+- **Description:** A Docker Compose template for MongoDB. This template allows you to quickly start a MongoDB database.
+
+### 2. PostgreSQL
 - **Location:** `postgresql/docker-compose.yml`
 - **Description:** A Docker Compose template for PostgreSQL. This template allows you to quickly start a PostgreSQL database.
 
@@ -12,7 +16,7 @@ This project contains various Docker Compose templates. Each template helps you 
 
 1. Navigate to the directory containing the relevant template:
    ```bash
-   cd postgresql
+   cd <service-directory>
    ```
 
 2. Start the services with Docker Compose:
@@ -38,20 +42,5 @@ This project contains various Docker Compose templates. Each template helps you 
 ## Contributing
 
 1. Fork this project.
-2. Create a new branch:
-   ```bash
-   git checkout -b new-feature
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m 'Added a new feature'
-   ```
-4. Push your branch to the remote repository:
-   ```bash
-   git push origin new-feature
-   ```
-5. Create a Pull Request.
-
-## License
-
-This project is licensed under the MIT License. For more information, see the `LICENSE` file.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and open a pull request.
